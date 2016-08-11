@@ -1,0 +1,9 @@
+/* CSS declarations go here */
+body {
+    font-size: 1.3em;
+    color: blue;
+}
+
+div {
+    padding: 1em;
+}
