@@ -1,9 +1,60 @@
 /* CSS declarations go here */
 body {
     font-size: 1.3em;
+    color: white;
+}
+
+.btn-group span {
     color: blue;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.btn-group > .btn, .btn-group-vertical > .btn {
+    position: relative;
+    float: right !important;
+    margin-top: 6px;
 }
 
 div {
     padding: 1em;
+}
+
+.adam_test {
+    background-color: lightgray;
+}
+
+#img_container
+{
+    position:relative;
+}
+
+#img_image
+{
+    position:absolute;
+    left:0;
+    top:0;
+}
+#img_text
+{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:44px;
+    font-weight:bold;
+    left:30px;
+    top:25px;
+}
+
+.pink_title p {
+    color: #DD3686;
+}
+.green_title p {
+    color: #00B838;
+}
+.orange_title p {
+    color: #e59400;
+}
+.blue_title p {
+    color: #3297E9;
 }

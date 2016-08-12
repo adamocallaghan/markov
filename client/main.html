@@ -1,16 +1,109 @@
 <head>
   <title>hello</title>
+
+    <script>
+        var imagesArray = [
+            "1.jpeg",
+            "3.jpeg",
+            "5.jpeg",
+            "6.jpeg",
+            "7.jpeg",
+            "8.jpeg",
+            "9.jpeg",
+            "10.jpeg",
+            "11.jpeg",
+            "13.jpeg",
+            "15.jpeg",
+            "16.jpeg",
+            "18.jpeg",
+            "20.jpeg",
+            "22.jpeg",
+            "23.jpeg",
+            "2.jpg",
+            "4.jpg",
+            "12.jpg",
+            "14.jpg",
+            "15.jpg",
+            "17.jpg",
+            "19.jpg",
+            "21.jpg",
+            "24.jpg",
+        ];
+
+        var colorArray = [
+            "pink_title",
+            "green_title",
+            "orange_title",
+            "blue_title",
+            "pink_title",
+            "green_title",
+            "orange_title",
+            "blue_title",
+            "pink_title",
+            "green_title",
+            "orange_title",
+            "blue_title",
+            "pink_title",
+            "green_title",
+            "orange_title",
+            "blue_title"
+        ];
+
+        function displayImage(){
+            console.log("onclick working");
+            //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
+            $( ".canvas2" ).removeClass("blue_title");
+            $( ".canvas2" ).removeClass("green_title");
+            $( ".canvas2" ).removeClass("orange_title");
+            $( ".canvas2" ).removeClass("blue_title");
+            var num = Math.floor(Math.random() * 24); // 0...6
+            var num2 = Math.floor(Math.random() * 16);
+            //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+            document.canvas.src = "assets/img/" + imagesArray[num];
+            $( "#img_text" ).addClass( colorArray[num2] );
+        }
+    </script>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+  <div class="container">
+      {{> hello}}
+  </div>
 
 </body>
 
 <template name="hello">
-    <div id="generated_title"></div>
-    <button id="generate">Generate</button>
-    <p>hello</p>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="btn-group">
+                <span>The Smiths Generator</span>
+                <button id="generate" class="btn right" onclick="displayImage();">Generate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row .row-eq-height">
+        <div class="col-md-6">
+            <div id="img_container">
+                <img id="img_image" src="blank.jpg" style="width:100%" name="canvas" />
+                <span id="img_text" class="canvas2" name="canvas2">
+                    <p>The Smiths</p>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-6 adam_test">
+            <h2>Track Listing:</h2>
+            <h3 id="generated_title0"></h3>
+            <h3 id="generated_title1"></h3>
+            <h3 id="generated_title2"></h3>
+            <h3 id="generated_title3"></h3>
+            <h3 id="generated_title4"></h3>
+            <h3 id="generated_title5"></h3>
+            <h3 id="generated_title6"></h3>
+            <h3 id="generated_title7"></h3>
+            <h3 id="generated_title8"></h3>
+            <h3 id="generated_title9"></h3>
+        </div>
+    </div>
 </template>
