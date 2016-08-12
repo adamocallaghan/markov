@@ -55,6 +55,11 @@ div {
     left:30px;
     top:425px;
 }
+
+.canvas2 p {
+    color: darkslategrey;
+}
+
 .pink_title p,
 .pink_title h2,
 .pink_title h3 {
@@ -72,6 +77,6 @@ div {
 }
 .blue_title p,
 .blue_title h2,
-.blue_title h3, {
+.blue_title h3 {
     color: #3297E9;
 }

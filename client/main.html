@@ -35,18 +35,6 @@
             "green_title",
             "orange_title",
             "blue_title",
-            "pink_title",
-            "green_title",
-            "orange_title",
-            "blue_title",
-            "pink_title",
-            "green_title",
-            "orange_title",
-            "blue_title",
-            "pink_title",
-            "green_title",
-            "orange_title",
-            "blue_title"
         ];
 
         function displayImage(){
@@ -57,7 +45,7 @@
             $( ".canvas2" ).removeClass("orange_title");
             $( ".canvas2" ).removeClass("blue_title");
             var num = Math.floor(Math.random() * 24); // 0...6
-            var num2 = Math.floor(Math.random() * 16);
+            var num2 = Math.floor(Math.random() * 4);
             //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
             document.canvas.src = "assets/img/" + imagesArray[num];
             $( "#img_text" ).addClass( colorArray[num2] );
@@ -88,12 +76,12 @@
     <div class="row .row-eq-height">
         <div class="col-md-6">
             <div id="img_container">
-                <img id="img_image" src="blank.jpg" style="width:100%" name="canvas" />
+                <img id="img_image" src="assets/img/blank.jpeg" style="width:100%" name="canvas" />
                 <span id="img_text" class="canvas2" name="canvas2">
                     <p>The Smiths</p>
                 </span>
                 <span id="album_text" class="canvas2" name="canvas2">
-                    <p id="generated_title10"></p>
+                    <p id="generated_title10">Not matter how much I beg, you'll only go and click anyway</p>
                 </span>
             </div>
         </div>
