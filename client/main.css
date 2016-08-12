@@ -45,16 +45,33 @@ div {
     left:30px;
     top:25px;
 }
-
-.pink_title p {
+#album_text
+{
+    z-index:100;
+    position:absolute;
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+    left:30px;
+    top:425px;
+}
+.pink_title p,
+.pink_title h2,
+.pink_title h3 {
     color: #DD3686;
 }
-.green_title p {
+.green_title p,
+.green_title h2,
+.green_title h3 {
     color: #00B838;
 }
-.orange_title p {
+.orange_title p,
+.orange_title h2,
+.orange_title h3 {
     color: #e59400;
 }
-.blue_title p {
+.blue_title p,
+.blue_title h2,
+.blue_title h3, {
     color: #3297E9;
 }

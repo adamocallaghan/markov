@@ -417,7 +417,7 @@ Template.hello.events({
     }
 
     // Loop to create 10 song titles for a 'new' Morrissey album! :-)
-    for (var m = 0; m < 10; m++) {
+    for (var m = 0; m < 11; m++) {
 
       var choice = function (a) {
         var i = Math.floor(a.length * Math.random());

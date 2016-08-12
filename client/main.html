@@ -61,6 +61,8 @@
             //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
             document.canvas.src = "assets/img/" + imagesArray[num];
             $( "#img_text" ).addClass( colorArray[num2] );
+            $( "#album_text" ).addClass( colorArray[num2] );
+            $( "#listing_text" ).addClass( colorArray[num2] );
         }
     </script>
 </head>
@@ -90,20 +92,25 @@
                 <span id="img_text" class="canvas2" name="canvas2">
                     <p>The Smiths</p>
                 </span>
+                <span id="album_text" class="canvas2" name="canvas2">
+                    <p id="generated_title10"></p>
+                </span>
             </div>
         </div>
         <div class="col-md-6 adam_test">
-            <h2>Track Listing:</h2>
-            <h3 id="generated_title0"></h3>
-            <h3 id="generated_title1"></h3>
-            <h3 id="generated_title2"></h3>
-            <h3 id="generated_title3"></h3>
-            <h3 id="generated_title4"></h3>
-            <h3 id="generated_title5"></h3>
-            <h3 id="generated_title6"></h3>
-            <h3 id="generated_title7"></h3>
-            <h3 id="generated_title8"></h3>
-            <h3 id="generated_title9"></h3>
+            <div id="listing_text" class="canvas2" name="canvas2">
+                <h2>Track Listing:</h2>
+                <h3 id="generated_title0"></h3>
+                <h3 id="generated_title1"></h3>
+                <h3 id="generated_title2"></h3>
+                <h3 id="generated_title3"></h3>
+                <h3 id="generated_title4"></h3>
+                <h3 id="generated_title5"></h3>
+                <h3 id="generated_title6"></h3>
+                <h3 id="generated_title7"></h3>
+                <h3 id="generated_title8"></h3>
+                <h3 id="generated_title9"></h3>
+            </div>
         </div>
     </div>
 </template>
