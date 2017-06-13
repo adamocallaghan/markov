@@ -1,40 +1,33 @@
-/* CSS declarations go here */
+/* Styling for The Smiths Markov Generator */
 body {
     font-size: 1.3em;
-    color: white;
-}
-
-.btn-group span {
-    color: blue;
-    font-size: 32px;
-    margin-right: 20px;
-}
-
-.btn-group > .btn, .btn-group-vertical > .btn {
-    position: relative;
-    float: right !important;
-    margin-top: 6px;
+    color: ghostwhite;
 }
 
 div {
     padding: 1em;
 }
 
-.adam_test {
+#top-panel {
+    text-align: center;
+}
+
+#title {
+    font-family: Calibri;
+    color: darkslategrey;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+#listing_panel {
     background-color: lightgray;
 }
 
-#img_container
-{
-    position:relative;
+@media screen and (max-width: 480px) {
+
 }
 
-#img_image
-{
-    position:absolute;
-    left:0;
-    top:0;
-}
+
 #img_text
 {
     z-index:100;
@@ -42,9 +35,10 @@ div {
     color:white;
     font-size:44px;
     font-weight:bold;
-    left:30px;
+    left:40px;
     top:25px;
 }
+
 #album_text
 {
     z-index:100;
@@ -52,7 +46,7 @@ div {
     color:white;
     font-size:34px;
     font-weight:bold;
-    left:30px;
+    left:40px;
     top:425px;
 }
 
